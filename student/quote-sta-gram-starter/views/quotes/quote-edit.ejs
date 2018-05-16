@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title></title>
+    </head>
+    <body>
+        <form  action="/quotes/<%= data.id%>?_method=PUT" method="POST">
+            <!-- <input type="text" name="input" value="<%= data.id%>" display="none"/> -->
+            <input type="text" name="content" value="<%= data.content%>"/>
+            <input type="text" name="author" value="<%= data.author%>"/>
+            <br>
+            <label for="genre_id">
+                <select name="genre_id" type="text">
+                    <option value="1">Motivational</option>
+                    <option value="2">Comedy</option>
+                    <option value="3">Philosophical</option>
+                </select>
+                <input type="submit" value="submit"/>
+            </label>
+        </form>
+    </body>
+</html>

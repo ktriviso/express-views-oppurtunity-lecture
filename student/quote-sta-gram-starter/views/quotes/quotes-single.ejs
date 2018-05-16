@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title></title>
+    </head>
+    <body>
+        <div class="quote">
+            <h1><%= data.content %></h1>
+            <h1><%= data.author %></h1>
+            <h1><%= data.genre %></h1>
+        </div>
+        <form class="" action="/quotes/<%= data.id%>?_method=DELETE" method="POST">
+            <input type="submit" value="delete"/>
+        </form>
+
+        <a href="/quotes/">See all quotes</a>
+        <a href="/quotes/<%= data.id %>/edit">Edit quotes</a>
+    </body>
+</html>

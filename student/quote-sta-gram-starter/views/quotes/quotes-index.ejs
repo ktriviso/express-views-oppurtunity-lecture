@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title></title>
+    </head>
+    <body>
+
+        <ul>
+            <% data.forEach(quote => { %>
+                <li><%= quote.content %></li>
+                <a href="http://localhost:4000/quotes/<%= quote.id %>">
+                    <li>Learn More</li>
+                </a>
+            <% })%>
+        </ul>
+
+    </body>
+</html>
